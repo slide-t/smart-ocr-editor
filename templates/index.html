@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart OCR Editor (TrOCR)</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 Smart OCR Editor</h1>
+    <p>Read handwritten text using AI (TrOCR)</p>
+  </header>
 
+  <main>
+    <div class="upload">
+      <input type="file" id="imageInput" accept="image/*">
+      <button id="ocrBtn">Extract Text</button>
+    </div>
+
+    <div class="preview">
+      <img id="previewImg" src="" alt="">
+      <div id="status"></div>
+    </div>
+
+    <textarea id="output" placeholder="Extracted text will appear here..."></textarea>
+
+    <div class="actions">
+      <button id="copyBtn">Copy</button>
+      <button id="downloadBtn">Download as DOCX</button>
+    </div>
+  </main>
+
+  <footer>Powered by Microsoft TrOCR & Flask</footer>
+  <script src="/static/script.js"></script>
+</body>
+</html>
