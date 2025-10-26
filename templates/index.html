@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smart OCR Editor (local TrOCR)</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Smart OCR Editor</h1>
+    <p>Local TrOCR + punctuation restoration + spell correction</p>
+
+    <div class="upload">
+      <input type="file" id="imageInput" accept="image/*">
+      <button id="ocrBtn">Extract</button>
+    </div>
+
+    <div id="status">Ready</div>
+    <img id="preview" alt="preview" style="max-width:100%; margin-top:12px; display:block;">
+
+    <h3>Final (punctuation restored)</h3>
+    <textarea id="finalText" rows="10"></textarea>
+
+    <h3>Spell-corrected (before punctuation)</h3>
+    <textarea id="spelledText" rows="4"></textarea>
+
+    <div class="actions">
+      <button id="copyBtn">Copy</button>
+      <button id="downloadBtn">Download DOCX</button>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
