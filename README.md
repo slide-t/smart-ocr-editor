@@ -1,0 +1,1 @@
+# smart-ocr-editor
