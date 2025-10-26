@@ -4,3 +4,5 @@ transformers
 pillow
 pyspellchecker
 python-docx
+opencv-python-headless
+sentencepiece
